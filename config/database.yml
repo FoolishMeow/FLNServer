@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: FLNApiServer_production
-  username: FLNApiServer
-  password: <%= ENV['FLNAPISERVER_DATABASE_PASSWORD'] %>
+  username: postgres
+  password: postgres

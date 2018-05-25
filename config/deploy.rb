@@ -13,7 +13,6 @@ set :deploy_via,      :remote_cache
 
 set :keep_releases, 3
 set :linked_dirs,  %w(log tmp/pids tmp/cache tmp/sockets vendor/bundle)
-set :assets_dir,       'public/assets'
 append :linked_files, ".env"
 
 # SSH
@@ -40,7 +39,3 @@ set :sidekiq_config, 'config/sidekiq.yml'
 set :db_local_clean, false
 set :db_remote_clean, true
 set :disallow_pushing, true
-
-Rake::Task["deploy:compile_assets"].clear
-Rake::Task["deploy:set_linked_dirs"].clear
-Rake::Task["deploy:rollback_assets"].clear
