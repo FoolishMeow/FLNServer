@@ -13,7 +13,7 @@ set :deploy_via,      :remote_cache
 
 set :keep_releases, 3
 set :linked_dirs,  %w(log tmp/pids tmp/cache tmp/sockets vendor/bundle)
-append :linked_files, ".env"
+append :linked_files, %w(.env config/master.key)
 
 # SSH
 set :ssh_options, { :forward_agent => true }
