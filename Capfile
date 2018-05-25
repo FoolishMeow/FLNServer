@@ -30,9 +30,9 @@ require "capistrano/rvm"
 # require "capistrano/rbenv"
 # require "capistrano/chruby"
 require "capistrano/bundler"
-require "capistrano/rails"
+#require "capistrano/rails"
 # require "capistrano/rails/assets"
-# require "capistrano/rails/migrations"
+require "capistrano/rails/migrations"
 # require "capistrano/passenger"
 require 'capistrano/puma'
 install_plugin Capistrano::Puma  # Default puma tasks
