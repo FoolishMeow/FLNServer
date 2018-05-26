@@ -22,3 +22,7 @@
 /config/master.key
 .env
 .DS_Store
+
+# Ignore Neo4j installation file.
+/db/neo4j/development/*
+/db/neo4j/test/*
