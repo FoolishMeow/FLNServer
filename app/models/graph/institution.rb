@@ -13,7 +13,7 @@ class Graph::Institution
   property :ext_relationships
   property :types
 
-  mount_uploader :image, ImageUploader
+  #mount_uploader :image, ImageUploader
 
   serialize :ext_relationships
   serialize :summary_sources

@@ -9,7 +9,7 @@ class Graph::Expert
   property :summary_sources
   property :ext_relationships
 
-  mount_uploader :image, ImageUploader
+  #mount_uploader :image, ImageUploader
 
   enum level: %i[level_1 level_2 level_3], _default: :level_1
 
