@@ -1,0 +1,53 @@
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of ActiveNode to
+# incrementally modify your database, and then regenerate this schema definition.
+#
+# Note that this schema.yml definition is the authoritative source for your
+# database schema. If you need to create the application database on another
+# system, you should be using neo4j:schema:load, not running all the migrations
+# from scratch. The latter is a flawed and unsustainable approach (the more migrations
+# you'll amass, the slower it'll run and the greater likelihood for issues).
+#
+# It's strongly recommended that you check this file into your version control system.
+
+---
+:constraints:
+- CONSTRAINT ON ( abbreviation:Abbreviation ) ASSERT abbreviation.uuid IS UNIQUE
+- CONSTRAINT ON ( example:Example ) ASSERT example.uuid IS UNIQUE
+- CONSTRAINT ON ( expert:Expert ) ASSERT expert.uuid IS UNIQUE
+- CONSTRAINT ON ( institution:Institution ) ASSERT institution.uuid IS UNIQUE
+- CONSTRAINT ON ( paper:Paper ) ASSERT paper.uuid IS UNIQUE
+- CONSTRAINT ON ( product:Product ) ASSERT product.uuid IS UNIQUE
+- CONSTRAINT ON ( publication:Publication ) ASSERT publication.uuid IS UNIQUE
+- CONSTRAINT ON ( resource:Resource ) ASSERT resource.uuid IS UNIQUE
+- CONSTRAINT ON ( schemamigration:SchemaMigration ) ASSERT schemamigration.migration_id
+  IS UNIQUE
+- CONSTRAINT ON ( technology:Technology ) ASSERT technology.uuid IS UNIQUE
+- CONSTRAINT ON ( usecase:UseCase ) ASSERT usecase.uuid IS UNIQUE
+:indexes:
+- INDEX ON :Expert(level)
+- INDEX ON :Institution(level)
+- INDEX ON :Technology(level)
+:versions:
+- '20180130090258'
+- '20180130090305'
+- '20180130091047'
+- '20180130091101'
+- '20180130091114'
+- '20180130091129'
+- '20180130091147'
+- '20180130091157'
+- '20180130091212'
+- '20180130091222'
+- '20180130091238'
+- '20180130091250'
+- '20180130091304'
+- '20180130091313'
+- '20180130091328'
+- '20180208062332'
+- '20180226051545'
+- '20180226065247'
+- '20180226065257'
+- '20180311174854'
+- '20180312055502'
+- '20180412164328'

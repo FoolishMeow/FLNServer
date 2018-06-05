@@ -34,5 +34,9 @@ module FLNApiServer
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    config.neo4j.record_timestamps = true
+    config.neo4j.module_handling = :demodulize
+    config.neo4j.association_model_namespace = 'Graph'
   end
 end
