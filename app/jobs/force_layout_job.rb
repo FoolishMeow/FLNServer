@@ -1,8 +1,8 @@
 class ForceLayoutJob < ApplicationJob
   queue_as :default
   def perform(layout_type, data)
-    ForceLayout.set :tick_interval, 0.04
-    ForceLayout.set :energy_threshold, 5000
+    #ForceLayout.set :tick_interval, 0.04
+    #ForceLayout.set :energy_threshold, 5000
     ForceLayout.send("#{layout_type}_layout!", JSON.parse(data.to_json))
     ForceLayout::Node.all.each do |fnode|
       node = Node.find_or_create_by(uid: fnode.id)

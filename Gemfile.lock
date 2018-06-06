@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/FoolishMeow/ForceLayout.git
-  revision: 8c30d746c2f5abc3e6e49cec98257333cd267ff0
+  revision: b272e967b3efabedffe2688d58b9c27d470924aa
   specs:
-    force_layout (0.1.6.3)
+    force_layout (0.1.6.5)
 
 GEM
   remote: https://gems.ruby-china.org/
