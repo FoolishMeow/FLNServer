@@ -64,7 +64,8 @@ class Graph::Technology
 
   class << self
     def search(param)
-      Graph::Technology.query_as(:n).where("n.en_name =~ '(?i).*#{param.gsub(' ', '.*')}.*'").pluck(:n).sort {|a, b| b.related_technologies.length - a.related_technologies.length}.first(5).map &:en_name
+      Graph::Technology.query_as(:n).where("n.en_name =~ '(?i).*#{param.gsub('', '.*')}.*'").pluck(:n)
+          .sort {|a, b| b.related_technologies.length - a.related_technologies.length}.first(5).map &:zh_name
     end
 
     def all_with_relationships(size = 0)

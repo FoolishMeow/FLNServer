@@ -8,6 +8,10 @@ class TechnologiesController < ApplicationController
     @technology = ::Graph::Technology.where(id: params[:id]).first
   end
 
+  def search
+    render json: {results: ::Graph::Technology.search(params[:q])}
+  end
+
   def relationships
     render json: ::Graph::Technology.all_with_relationships
   end
