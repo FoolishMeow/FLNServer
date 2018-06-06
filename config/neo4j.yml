@@ -8,4 +8,4 @@ test:
 
 production:
   type: http
-  url: http://neo4kj:password@127.0.0.1:7474
+  url: http://neo4j:password@127.0.0.1:7474
