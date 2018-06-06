@@ -7,17 +7,16 @@ class Node < ApplicationRecord
     end
   end
 
-  def hashed_data
+  def hashed_data(layout)
     {
       id: self.uid,
       zh_name: self.zh_name,
       en_name: self.en_name,
-      tipe: self.type,
-      'class': self.klass,
+      type: self.tipe,
       position: {
-        x: self.position[:x],
-        y: self.position[:y],
-        z: self.position[:z]
+        x: self.position[layout]['x'],
+        y: self.position[layout]['y'],
+        z: self.position[layout]['z']
       }
     }
   end
@@ -35,5 +34,9 @@ class Node < ApplicationRecord
     puts "Count: #{self.all.size} nodes."
     puts "H Cover: #{h}, #{(100 * h / self.all.size).to_i}%"
     puts "S Cover: #{s}, #{(100 * s / self.all.size).to_i}%"
+  end
+
+  def self.f(name)
+    self.where(zh_name: name).first
   end
 end
