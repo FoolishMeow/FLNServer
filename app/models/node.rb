@@ -13,11 +13,25 @@ class Node < ApplicationRecord
       zh_name: self.zh_name,
       en_name: self.en_name,
       type: self.tipe,
+      summary: self.summary,
       position: {
         x: self.position[layout]['x'],
         y: self.position[layout]['y'],
         z: self.position[layout]['z']
       }
+    }
+  end
+
+  def all_data
+    {
+        id: self.uid,
+        zh_name: self.zh_name,
+        en_name: self.en_name,
+        type: self.tipe,
+        position: self.position,
+        spherical_position: self.position["spherical"],
+        hierarchy_position: self.position["hierarchy"],
+        summary: self.summary
     }
   end
 
