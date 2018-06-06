@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  position: 
+  type: 
+  klass: MyString
+  zh_name: MyString
+  en_name: MyString
+  uid: MyString
+
+two:
+  position: 
+  type: 
+  klass: MyString
+  zh_name: MyString
+  en_name: MyString
+  uid: MyString

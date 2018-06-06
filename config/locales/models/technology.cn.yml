@@ -1,0 +1,11 @@
+zh-CN:
+  technology_types:
+    Model: 模型
+    Algorithm: 算法
+    Strategy: 策略
+    Method: 方法
+    Application: 应用
+    Mission: 任务
+    Theory: 理论基础
+    Element: 元素
+    Other: 其他

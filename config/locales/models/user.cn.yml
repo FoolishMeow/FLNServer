@@ -1,0 +1,22 @@
+zh-CN:
+  activerecord:
+    models:
+      user: '用户'
+    attributes:
+      user:
+        name: '昵称'
+        mobile: '手机'
+        email: '邮箱'
+    errors:
+      models:
+        user:
+          need_mobile_or_email: '用户名和邮箱不能同时为空'
+          only_mobile_or_email: '用户名或邮箱只能填写一项'
+          only_chinese_mobile: '只支持11位中国大陆手机号'
+          wrong_verify_code: '验证码错误'
+          set_login_name_first: '请先设置邮箱/手机号'
+  user_roles:
+    admin: 管理员
+    organizer: 组织者
+    editor: 编辑
+    analyst: 分析师

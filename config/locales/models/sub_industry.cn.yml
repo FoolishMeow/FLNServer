@@ -1,0 +1,5 @@
+zh-CN:
+  activerecord:
+    attributes:
+      sub_industry:
+        name: 名称

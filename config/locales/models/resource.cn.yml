@@ -1,0 +1,6 @@
+zh-CN:
+  resource_types:
+    Data: 数据集
+    Tools: 工具包
+    Tutorial: 教程与实现
+    Course: 课程

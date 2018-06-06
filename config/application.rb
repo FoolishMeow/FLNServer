@@ -24,7 +24,13 @@ module FLNApiServer
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
-    config.generators { |g| g.orm :neo4j }
+    #config.generators { |g| g.orm :neo4j }
+    config.time_zone = 'Beijing'
+    config.i18n.enforce_available_locales = false
+    config.i18n.default_locale = 'zh-CN'
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+
+    config.active_job.queue_adapter = :sidekiq
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading

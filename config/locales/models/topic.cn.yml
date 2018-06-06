@@ -1,0 +1,20 @@
+zh-CN:
+  activerecord:
+    models:
+      topic: 专题
+    attributes:
+      topic:
+        title: 标题
+        author: 作者
+        cover_image: ''
+    errors:
+      models:
+        topic:
+          need_cover_image: '请上传配图'
+  topic_status:
+    published: 已发布
+    draft: 未发布
+  topic_copyrights:
+    original: 原创
+    translate: 翻译
+    reproduce: 转载

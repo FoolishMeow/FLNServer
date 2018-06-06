@@ -1,0 +1,12 @@
+zh-CN:
+  activerecord:
+    models:
+      advertisement: AI daily
+    attributes:
+      advertisement:
+        title: 标题
+        url: 网址
+    errors:
+      models:
+        advertisement:
+          invalid_url: '格式不规范（https://xxx.com)'

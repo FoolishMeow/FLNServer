@@ -1,0 +1,37 @@
+zh-CN:
+  activerecord:
+    attributes:
+      article:
+        title: 标题
+        description: 描述
+        author: 作者
+        cover_image: ''
+    errors:
+      models:
+        article:
+          need_cover_image: '请上传文章图片'
+  article_copyrights:
+    original: 原创
+    translate: 翻译
+    reproduce: 转载
+  article_categories:
+    basic: 入门
+    industry: 产业
+    practice: 工程
+    theory: 理论
+    tech_analysis: 技术分析
+    industry_analysis: 产业分析
+    research: 研究报告
+    bi_weekly: Bi-weekly
+    event: 活动
+    news_letter: NewsLetter
+  article_status:
+    published: 已发布
+    draft: 草稿
+    pending: 待审核
+    failed: 未通过
+    deleted: 已删除
+  article_copyright_contents:
+    original: 本文由机器之心原创出品，版权归作者所有，转载请查看要求，机器之心对于违规侵权者保有法律追诉权。
+    translate: 本文由机器之心编译出品，原文来自Synced，作者Synced，转载请查看要求，机器之心对于违规侵权者保有法律追诉权。
+    reproduce: 本文由机器之心经授权转载自Synced，禁止二次转载。

@@ -1,0 +1,12 @@
+zh-CN:
+  activerecord:
+    models:
+      special_column: 专栏
+    attributes:
+      special_column:
+        name: 名称
+        avatar: ''
+    errors:
+      models:
+        special_column:
+          need_avatar: '请上传头像'

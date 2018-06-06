@@ -1,0 +1,6 @@
+zh-CN:
+  activerecord:
+    errors:
+      models:
+        authorization:
+          at_least_one_login: '至少保留一项登录方式'

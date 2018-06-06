@@ -29,5 +29,10 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+zh-CN:
   hello: "Hello world"
+  klass:
+    fact: "事实"
+    concept: "概念"
+    program: "实践"
+    meta: "元认知"

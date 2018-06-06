@@ -1,0 +1,5 @@
+zh-CN:
+  activerecord:
+    attributes:
+      corporation:
+        name: 名称

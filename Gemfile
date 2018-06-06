@@ -17,6 +17,9 @@ gem 'puma', '~> 3.11'
 gem 'rack-cors'
 # Use Redis adapter to run Action Cable in production
 gem 'sidekiq', '~> 5'
+gem 'sinatra'
+# For Caching Actions
+gem 'actionpack-action_caching'
 
 gem 'force_layout', github: 'FoolishMeow/ForceLayout'
 # Use dotenv for envs
@@ -25,6 +28,7 @@ gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
+gem 'redis-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 # Use ActiveStorage variant

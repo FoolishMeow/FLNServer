@@ -1,0 +1,15 @@
+zh-CN:
+  user_work_year:
+    one: '一年内'
+    two: '1-3年'
+    four: '3-5年'
+    five: '5年以上'
+  user_attention:
+    papers : '学术论文'
+    technologies : '技术教程'
+    dailies : '行业快讯'
+    indstry : '行业解读'
+    report : '项目报道'
+    interview : '人物专访'
+
+

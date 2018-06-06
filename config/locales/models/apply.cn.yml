@@ -1,0 +1,5 @@
+zh-CN:
+  apply_status:
+    pending: 待审核
+    accepted: 已通过
+    rejected: 未通过
